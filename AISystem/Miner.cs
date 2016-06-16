@@ -20,7 +20,7 @@ namespace AIPract.AISystem
         {
             if (_currentState != null)
             {
-                _currentState.Execute(this);
+                _currentState.Execute(this, deltaTime);
             }
         }
 

@@ -39,8 +39,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AISystem\BaseGameEntity.cs" />
-    <Compile Include="AISystem\IState.cs" />
+    <Compile Include="AISystem\State.cs" />
     <Compile Include="AISystem\Miner.cs" />
+    <Compile Include="AISystem\States\MovingState.cs" />
+    <Compile Include="AISystem\States\RestingState.cs" />
+    <Compile Include="AISystem\States\WorkingState.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

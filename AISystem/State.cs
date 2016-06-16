@@ -7,7 +7,7 @@ namespace AIPract.AISystem
         protected string _uniqueName;
 
         public abstract void Enter(Miner miner);
-        public abstract void Execute(Miner miner);
+        public abstract void Execute(Miner miner, float deltaTime);
         public abstract void Exit(Miner miner);
 
         public bool Equals(State other)
