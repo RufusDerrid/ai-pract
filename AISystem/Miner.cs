@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -11,12 +12,17 @@ namespace AIPract.AISystem
     {
         private const int MaxFatigue = 10;
 
+        public Vector2 Position { get; private set; }
+
         private float _fatigue;
         private State _currentState;
 
-        public Miner(int id) : base(id) { }
+        public Miner(int id) : base(id)
+        {
+            Position = Vector2.Zero;
+        }
 
-        public override void Update(float deltaTime)
+        public override void Update(double deltaTime)
         {
             if (_currentState != null)
             {
@@ -31,6 +37,11 @@ namespace AIPract.AISystem
             _currentState.Exit(this);
             _currentState = newState;
             _currentState.Enter(this);
+        }
+
+        public void AddPosition(Vector2 pos)
+        {
+            Position += pos;
         }
 
         public void InreaseFatigue()

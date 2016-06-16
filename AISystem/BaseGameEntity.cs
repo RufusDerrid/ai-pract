@@ -24,7 +24,7 @@ namespace AIPract.AISystem
             _nextValidID = _id + 1;
         }
 
-        public virtual void Update(float deltaTime)
+        public virtual void Update(double deltaTime)
         {
 
         }
