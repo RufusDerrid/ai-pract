@@ -25,7 +25,7 @@ namespace AIPract.AISystem.States
             throw new NotImplementedException();
         }
 
-        public override void Execute(Miner miner, float deltaTime)
+        public override void Execute(Miner miner, double deltaTime)
         {
             miner.DecreaseFatigue();
         }

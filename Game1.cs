@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using AIPract.AISystem;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -11,6 +12,9 @@ namespace AIPract
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+
+        private Miner _miner;
+        private Texture2D _minerTexture;
 
         public Game1()
         {
@@ -27,6 +31,7 @@ namespace AIPract
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            _miner = new Miner(1);
 
             base.Initialize();
         }
@@ -41,6 +46,7 @@ namespace AIPract
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            _minerTexture = Content.Load<Texture2D>("sprites/miner");
         }
 
         /// <summary>
@@ -63,6 +69,7 @@ namespace AIPract
                 Exit();
 
             // TODO: Add your update logic here
+            _miner.Update(gameTime.ElapsedGameTime.TotalSeconds);
 
             base.Update(gameTime);
         }
@@ -76,6 +83,9 @@ namespace AIPract
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+            spriteBatch.Begin();
+            spriteBatch.Draw(_minerTexture, _miner.Position, Color.White);
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }

@@ -25,7 +25,7 @@ namespace AIPract.AISystem.States
             throw new NotImplementedException();
         }
 
-        public override void Execute(Miner miner)
+        public override void Execute(Miner miner, double deltaTime)
         {
             throw new NotImplementedException();
         }
