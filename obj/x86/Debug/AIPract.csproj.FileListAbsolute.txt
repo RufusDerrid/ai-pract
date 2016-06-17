@@ -24,3 +24,29 @@ D:\Projects\C#\ai-pract\bin\Windows\x86\Debug\SharpDX.RawInput.xml
 D:\Projects\C#\ai-pract\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
 D:\Projects\C#\ai-pract\obj\x86\Debug\AIPract.exe
 D:\Projects\C#\ai-pract\obj\x86\Debug\AIPract.pdb
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\obj\x86\Debug\AIPract.exe
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\obj\x86\Debug\AIPract.pdb
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\Content\sprites\miner.xnb
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\AIPract.exe
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\AIPract.pdb
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.RawInput.dll
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.RawInput.xml
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\obj\x86\Debug\AIPract.csprojResolveAssemblyReference.cache

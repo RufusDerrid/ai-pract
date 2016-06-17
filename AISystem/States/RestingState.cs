@@ -10,7 +10,10 @@ namespace AIPract.AISystem.States
     {
         private static readonly RestingState _instance = new RestingState();
 
-        private RestingState() { }
+        private RestingState()
+        {
+            _uniqueName = "RestingState";
+        }
 
         public static RestingState Instance
         {
@@ -22,17 +25,17 @@ namespace AIPract.AISystem.States
 
         public override void Enter(Miner miner)
         {
-            throw new NotImplementedException();
+            
         }
 
         public override void Execute(Miner miner, double deltaTime)
         {
-            throw new NotImplementedException();
+            
         }
 
         public override void Exit(Miner miner)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

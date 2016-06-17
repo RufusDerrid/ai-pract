@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using AIPract.AISystem.States;
+using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -32,9 +33,12 @@ namespace AIPract.AISystem
 
         public void ChangeState(State newState)
         {
-            Debug.Assert(_currentState == newState);
+            if (_currentState != null)
+            {
+                Debug.Assert(_currentState == newState);
+                _currentState.Exit(this);
+            }
 
-            _currentState.Exit(this);
             _currentState = newState;
             _currentState.Enter(this);
         }

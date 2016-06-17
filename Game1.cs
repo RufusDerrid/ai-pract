@@ -1,4 +1,5 @@
 ﻿using AIPract.AISystem;
+using AIPract.AISystem.States;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -32,6 +33,7 @@ namespace AIPract
         {
             // TODO: Add your initialization logic here
             _miner = new Miner(1);
+            _miner.ChangeState(MovingState.Instance);
 
             base.Initialize();
         }

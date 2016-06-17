@@ -14,7 +14,10 @@ namespace AIPract.AISystem.States
         private Vector2 _targetPosition;
         private Vector2 _moveVector;
 
-        private MovingState() { }
+        private MovingState()
+        {
+            _uniqueName = "MovingState";
+        }
 
         public static MovingState Instance
         {
@@ -33,12 +36,16 @@ namespace AIPract.AISystem.States
 
         public override void Execute(Miner miner, double deltaTime)
         {
-            miner.AddPosition(miner.Position + _moveVector * (float)deltaTime);
+            miner.AddPosition(miner.Position + _moveVector * (float)deltaTime * 0.005f);
+            if ((_targetPosition - miner.Position).Length() < 0.2f)
+            {
+                miner.ChangeState(WorkingState.Instance);
+            }
         }
 
         public override void Exit(Miner miner)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

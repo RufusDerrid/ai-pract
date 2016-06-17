@@ -10,7 +10,10 @@ namespace AIPract.AISystem.States
     {
         private static readonly WorkingState _instance = new WorkingState();
 
-        private WorkingState() { }
+        private WorkingState()
+        {
+            _uniqueName = "WorkingState";
+        }
 
         public static WorkingState Instance
         {
@@ -22,7 +25,7 @@ namespace AIPract.AISystem.States
 
         public override void Enter(Miner miner)
         {
-            throw new NotImplementedException();
+            
         }
 
         public override void Execute(Miner miner, double deltaTime)
@@ -32,7 +35,7 @@ namespace AIPract.AISystem.States
 
         public override void Exit(Miner miner)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
