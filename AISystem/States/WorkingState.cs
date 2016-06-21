@@ -25,12 +25,17 @@ namespace AIPract.AISystem.States
 
         public override void Enter(Miner miner)
         {
-            
+            miner.State = "working";
         }
 
         public override void Execute(Miner miner, double deltaTime)
         {
-            miner.DecreaseFatigue();
+            miner.DecreaseFatigue(4*deltaTime);
+            if(miner.Fatigue <= 0)
+            {
+                miner.InreaseFatigue(1);
+                miner.ChangeState(MovingState.Instance);
+            }
         }
 
         public override void Exit(Miner miner)

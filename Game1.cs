@@ -16,6 +16,7 @@ namespace AIPract
 
         private Miner _miner;
         private Texture2D _minerTexture;
+        private SpriteFont _font;
 
         public Game1()
         {
@@ -49,6 +50,7 @@ namespace AIPract
 
             // TODO: use this.Content to load your game content here
             _minerTexture = Content.Load<Texture2D>("sprites/miner");
+            _font = Content.Load<SpriteFont>("font");
         }
 
         /// <summary>
@@ -87,6 +89,7 @@ namespace AIPract
             // TODO: Add your drawing code here
             spriteBatch.Begin();
             spriteBatch.Draw(_minerTexture, _miner.Position, Color.White);
+            spriteBatch.DrawString(_font, "Fatigue: " + _miner.Fatigue, new Vector2(100, 20), Color.Black);
             spriteBatch.End();
 
             base.Draw(gameTime);

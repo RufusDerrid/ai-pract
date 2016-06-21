@@ -11,9 +11,11 @@ namespace AIPract.AISystem
 {
     public class Miner : BaseGameEntity
     {
-        private const int MaxFatigue = 10;
+        public const int MaxFatigue = 10;
 
+        public string State;
         public Vector2 Position { get; private set; }
+        public float Fatigue { get { return _fatigue; } }
 
         private float _fatigue;
         private State _currentState;
@@ -21,6 +23,8 @@ namespace AIPract.AISystem
         public Miner(int id) : base(id)
         {
             Position = Vector2.Zero;
+            State = "start";
+            _fatigue = 10;
         }
 
         public override void Update(double deltaTime)
@@ -48,14 +52,14 @@ namespace AIPract.AISystem
             Position += pos;
         }
 
-        public void InreaseFatigue()
+        public void InreaseFatigue(double deltaTime)
         {
-            _fatigue++;
+            _fatigue += (float)deltaTime;
         }
 
-        public void DecreaseFatigue()
+        public void DecreaseFatigue(double deltaTime)
         {
-            _fatigue--;
+            _fatigue -= (float)deltaTime;
         }
     }
 }
