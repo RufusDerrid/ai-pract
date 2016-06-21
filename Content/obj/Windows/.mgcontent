@@ -4,6 +4,6 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/DOKolodko/Documents/Visual Studio 2015/Projects/AIPractRep/Content/sprites/miner.png</File>
+    <File>D:/Projects/C#/ai-pract/Content/sprites/miner.png</File>
   </SourceFiles>
 </SourceFileCollection>

@@ -35,7 +35,7 @@ namespace AIPract.AISystem
         {
             if (_currentState != null)
             {
-                Debug.Assert(_currentState == newState);
+                Debug.Assert(_currentState != newState);
                 _currentState.Exit(this);
             }
 

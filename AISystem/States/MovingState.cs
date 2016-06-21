@@ -36,8 +36,10 @@ namespace AIPract.AISystem.States
 
         public override void Execute(Miner miner, double deltaTime)
         {
-            miner.AddPosition(miner.Position + _moveVector * (float)deltaTime * 0.005f);
-            if ((_targetPosition - miner.Position).Length() < 0.2f)
+            var delta = _moveVector * (float)deltaTime;
+            miner.AddPosition(_moveVector);
+            var length = (_targetPosition - miner.Position).Length();
+            if (length < 10.0f)
             {
                 miner.ChangeState(WorkingState.Instance);
             }
