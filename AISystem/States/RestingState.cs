@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AIPract.AISystem.States
 {
-    public sealed class RestingState : State
+    public sealed class RestingState : State<Miner>
     {
         private static readonly RestingState _instance = new RestingState();
 
