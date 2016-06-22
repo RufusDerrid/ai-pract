@@ -41,6 +41,7 @@
     <Compile Include="AISystem\BaseGameEntity.cs" />
     <Compile Include="AISystem\State.cs" />
     <Compile Include="AISystem\Miner.cs" />
+    <Compile Include="AISystem\StateMachine.cs" />
     <Compile Include="AISystem\States\MovingState.cs" />
     <Compile Include="AISystem\States\RestingState.cs" />
     <Compile Include="AISystem\States\WorkingState.cs" />
