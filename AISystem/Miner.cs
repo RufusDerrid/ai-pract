@@ -18,7 +18,7 @@ namespace AIPract.AISystem
         public float Fatigue { get { return _fatigue; } }
 
         private float _fatigue;
-        private State _currentState;
+        private State<Miner> _currentState;
 
         public Miner(int id) : base(id)
         {
@@ -35,7 +35,7 @@ namespace AIPract.AISystem
             }
         }
 
-        public void ChangeState(State newState)
+        public void ChangeState(State<Miner> newState)
         {
             if (_currentState != null)
             {

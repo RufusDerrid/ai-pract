@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AIPract.AISystem.States
 {
-    public sealed class MovingState : State
+    public sealed class MovingState : State<Miner>
     {
         private static readonly MovingState _instance = new MovingState();
 
@@ -64,5 +64,6 @@ namespace AIPract.AISystem.States
         {
             
         }
+
     }
 }
