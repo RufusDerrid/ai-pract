@@ -9,8 +9,11 @@ namespace AIPract.AISystem
 {
     public class StateMachine<T>
     {
-        private T _owner;
+        public State<T> CurrentState { get { return _currentState; } }
+        public State<T> PreviousState { get { return _previousState; } }
+        public State<T> GlobalState { get { return _globalState; } }
 
+        private T _owner;
         private State<T> _currentState;
         private State<T> _previousState;
         private State<T> _globalState;
@@ -55,6 +58,7 @@ namespace AIPract.AISystem
 
         public void RevertToPreviousState()
         {
+            ChangeState(_previousState);
         }
     }
 }
