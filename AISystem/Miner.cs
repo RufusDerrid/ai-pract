@@ -19,6 +19,8 @@ namespace AIPract.AISystem
 
         private float _fatigue;
         private State<Miner> _currentState;
+        private State<Miner> _previousState;
+        private State<Miner> _globalState;
 
         public Miner(int id) : base(id)
         {
@@ -45,6 +47,11 @@ namespace AIPract.AISystem
 
             _currentState = newState;
             _currentState.Enter(this);
+        }
+
+        public void RevertToPreviousState()
+        {
+
         }
 
         public void AddPosition(Vector2 pos)

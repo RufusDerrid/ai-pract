@@ -51,3 +51,4 @@ C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\
 C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
 C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\obj\x86\Debug\AIPract.csprojResolveAssemblyReference.cache
 C:\Users\DOKolodko\Documents\Visual Studio 2015\Projects\AIPractRep\bin\Windows\x86\Debug\Content\font.xnb
+D:\Projects\C#\ai-pract\bin\Windows\x86\Debug\Content\font.xnb
