@@ -18,6 +18,11 @@ namespace AIPract.AISystem
         private State<T> _previousState;
         private State<T> _globalState;
 
+        public StateMachine(T owner)
+        {
+            _owner = owner;
+        }
+
         public void SetCurrentState(State<T> s)
         {
             _currentState = s;
@@ -59,6 +64,11 @@ namespace AIPract.AISystem
         public void RevertToPreviousState()
         {
             ChangeState(_previousState);
+        }
+
+        public bool IsInState(State<T> state)
+        {
+            return _currentState == state;
         }
     }
 }

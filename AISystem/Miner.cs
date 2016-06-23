@@ -18,35 +18,21 @@ namespace AIPract.AISystem
         public float Fatigue { get { return _fatigue; } }
 
         private float _fatigue;
-        private State<Miner> _currentState;
-        private State<Miner> _previousState;
-        private State<Miner> _globalState;
+        private StateMachine<Miner> _stateMachine;
+        private int _peeValue;
 
         public Miner(int id) : base(id)
         {
             Position = Vector2.Zero;
             State = "start";
             _fatigue = 10;
+            _stateMachine = new StateMachine<Miner>(this);
+            _stateMachine.SetCurrentState(MovingState.Instance);
         }
 
         public override void Update(double deltaTime)
         {
-            if (_currentState != null)
-            {
-                _currentState.Execute(this, deltaTime);
-            }
-        }
-
-        public void ChangeState(State<Miner> newState)
-        {
-            if (_currentState != null)
-            {
-                Debug.Assert(_currentState != newState);
-                _currentState.Exit(this);
-            }
-
-            _currentState = newState;
-            _currentState.Enter(this);
+            
         }
 
         public void RevertToPreviousState()
