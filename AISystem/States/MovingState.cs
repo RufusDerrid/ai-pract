@@ -42,7 +42,7 @@ namespace AIPract.AISystem.States
             _moveVector.Normalize();
         }
 
-        public override void Execute(Miner miner, double deltaTime)
+        public override void Execute(Miner miner, float deltaTime)
         {
             var delta = _moveVector * (float)deltaTime * 2;
             miner.AddPosition(_moveVector);
@@ -51,11 +51,11 @@ namespace AIPract.AISystem.States
             {
                 if (miner.State == "resting" || miner.State == "start")
                 {
-                    miner.ChangeState(WorkingState.Instance);
+                    miner.StateMachine.ChangeState(WorkingState.Instance);
                 }
                 else if (miner.State == "working")
                 {
-                    miner.ChangeState(RestingState.Instance);
+                    miner.StateMachine.ChangeState(RestingState.Instance);
                 }
             }
         }

@@ -4,7 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>D:/Projects/C#/ai-pract/Content/sprites/miner.png</File>
-    <File>D:/Projects/C#/ai-pract/Content/font.spritefont</File>
+    <File>C:/Users/DOKolodko/Documents/Visual Studio 2015/Projects/AIPractRep/Content/sprites/miner.png</File>
+    <File>C:/Users/DOKolodko/Documents/Visual Studio 2015/Projects/AIPractRep/Content/font.spritefont</File>
   </SourceFiles>
 </SourceFileCollection>

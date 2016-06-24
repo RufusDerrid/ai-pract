@@ -34,7 +34,6 @@ namespace AIPract
         {
             // TODO: Add your initialization logic here
             _miner = new Miner(1);
-            _miner.ChangeState(MovingState.Instance);
 
             base.Initialize();
         }
@@ -73,7 +72,7 @@ namespace AIPract
                 Exit();
 
             // TODO: Add your update logic here
-            _miner.Update(gameTime.ElapsedGameTime.TotalSeconds);
+            _miner.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
 
             base.Update(gameTime);
         }

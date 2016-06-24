@@ -28,13 +28,13 @@ namespace AIPract.AISystem.States
             miner.State = "working";
         }
 
-        public override void Execute(Miner miner, double deltaTime)
+        public override void Execute(Miner miner, float deltaTime)
         {
             miner.DecreaseFatigue(4*deltaTime);
             if(miner.Fatigue <= 0)
             {
                 miner.InreaseFatigue(1);
-                miner.ChangeState(MovingState.Instance);
+                miner.StateMachine.ChangeState(MovingState.Instance);
             }
         }
 
