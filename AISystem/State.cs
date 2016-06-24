@@ -7,7 +7,7 @@ namespace AIPract.AISystem
         protected string _uniqueName;
 
         public abstract void Enter(T entity);
-        public abstract void Execute(T entity, double deltaTime);
+        public abstract void Execute(T entity, float deltaTime);
         public abstract void Exit(T entity);
 
         public bool Equals(State<T> other)

@@ -13,7 +13,7 @@ namespace AIPract.AISystem.States
             miner.State = "global";
         }
 
-        public override void Execute(Miner miner, double deltaTime)
+        public override void Execute(Miner miner, float deltaTime)
         {
             
         }

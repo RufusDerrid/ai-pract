@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/Projects/C#/ai-pract/Content/sprites/miner.png</SourceFile>
-  <SourceTime>2016-06-21T23:39:16.2531348+03:00</SourceTime>
-  <DestFile>D:/Projects/C#/ai-pract/Content/bin/Windows/sprites/miner.xnb</DestFile>
-  <DestTime>2016-06-21T23:40:23.3026596+03:00</DestTime>
+  <SourceFile>C:/Users/DOKolodko/Documents/Visual Studio 2015/Projects/AIPractRep/Content/sprites/miner.png</SourceFile>
+  <SourceTime>2016-06-17T10:33:00.6577961+03:00</SourceTime>
+  <DestFile>C:/Users/DOKolodko/Documents/Visual Studio 2015/Projects/AIPractRep/Content/bin/Windows/sprites/miner.xnb</DestFile>
+  <DestTime>2016-06-24T14:02:49.2607965+03:00</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2016-03-16T05:18:04+03:00</ImporterTime>
+  <ImporterTime>2016-03-30T09:36:08+03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2016-03-16T05:18:04+03:00</ProcessorTime>
+  <ProcessorTime>2016-03-30T09:36:08+03:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>

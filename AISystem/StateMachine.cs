@@ -38,7 +38,7 @@ namespace AIPract.AISystem
             _previousState = s;
         }
 
-        public void Update(double deltaTime)
+        public void Update(float deltaTime)
         {
             if (_globalState != null)
             {

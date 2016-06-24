@@ -16,10 +16,10 @@ namespace AIPract.AISystem
         public string State;
         public Vector2 Position { get; private set; }
         public float Fatigue { get { return _fatigue; } }
+        public StateMachine<Miner> StateMachine { get { return _stateMachine; } }
 
         private float _fatigue;
         private StateMachine<Miner> _stateMachine;
-        private int _peeValue;
 
         public Miner(int id) : base(id)
         {
@@ -30,9 +30,9 @@ namespace AIPract.AISystem
             _stateMachine.SetCurrentState(MovingState.Instance);
         }
 
-        public override void Update(double deltaTime)
+        public override void Update(float deltaTime)
         {
-            
+            _stateMachine.Update(deltaTime);
         }
 
         public void RevertToPreviousState()
@@ -45,14 +45,14 @@ namespace AIPract.AISystem
             Position += pos;
         }
 
-        public void InreaseFatigue(double deltaTime)
+        public void InreaseFatigue(float deltaTime)
         {
-            _fatigue += (float)deltaTime;
+            _fatigue += deltaTime;
         }
 
-        public void DecreaseFatigue(double deltaTime)
+        public void DecreaseFatigue(float deltaTime)
         {
-            _fatigue -= (float)deltaTime;
+            _fatigue -= deltaTime;
         }
     }
 }
