@@ -19,13 +19,14 @@ namespace AIPract.AISystem
 
         private float _fatigue;
         private StateMachine<Miner> _stateMachine;
-        private int _peeValue;
+        private int _thirstValue;
 
         public Miner(int id) : base(id)
         {
             Position = Vector2.Zero;
             State = "start";
             _fatigue = 10;
+            _thirstValue = 0;
             _stateMachine = new StateMachine<Miner>(this);
             _stateMachine.SetCurrentState(MovingState.Instance);
         }
